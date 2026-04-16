@@ -1,16 +1,7 @@
-import { Explorer } from './components/Explorer'
-import { Feed } from './components/Feed'
-import { Profile } from './components/Profile'
+import { RouterProvider } from "react-router-dom";
+import { router } from "./routes";
 
 
 export function App(){
-  return(
-    <>
-    <h1>Grow Twitter App</h1>
-    <Explorer />
-    <Feed />
-    <Profile />
-
-    </>
-  )
+  return <RouterProvider router={router}/>
 }
